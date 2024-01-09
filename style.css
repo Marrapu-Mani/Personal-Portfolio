@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;700&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+    text-decoration:none;
+}
+ html{
+    scroll-behavior: smooth;
+ }
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin:auto;
+}
+
+/* navbar styling */
+
+.navbar{
+    position:fixed;
+    width: 100%;
+    z-index: 999;
+    /* background-color: crimson; */
+    font-family: 'Ubuntu',sans-serif;
+    padding: 30px 0;
+    transition:all 0.3s ease;
+}
+
+.navbar.sticky{
+    background-color: crimson;
+    padding: 15px 0;
+}
+
+.navbar .max-width{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a{
+    color: white;
+    font-size:35px;
+    font-weight: 600;
+}
+
+.menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.menu li a{
+    color: white;
+    font-size:18px;
+    font-weight: 500;
+    margin-left: 45px;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover{
+    color:crimson;
+}
+
+.navbar.sticky .menu li a:hover{
+    color: black;
+}
+
+.menu-btn{
+    color:white;
+    font-size:23px;
+    cursor:pointer;
+    display: none;  /* hiding menu-btn*/
+}
+
+/* home section styling */
+.home{
+    background:url("./images/banner1.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    height:100vh;
+    min-height: 500px;
+    color:white;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+.home .max-width{
+    margin:150px 0 auto 40px;
+    display: flex;
+}
+
+.home-content{
+    margin-top:80px;
+}
+
+.home-content .text1{
+    font-size:27px;
+}
+
+.home-content .text2{
+    font-size:75px;
+    font-weight:600;
+    margin-left:-3px;
+}
+
+.home-content .text3{
+    font-size:40px;
+    margin:5px 0;
+}
+
+.home-content .text3 span{
+    font-weight: 600;
+    color:crimson;
+}
+
+.home-content a{
+    display:inline-block;
+    background: crimson;
+    color:white;
+    font-size:25px;
+    padding:12px 36px;
+    margin-top:20px;
+    border-radius:6px;
+    border: 2px solid crimson;
+    transition:all 0.3s ease;
+}
+
+.home-content a:hover{
+    color:crimson;
+    background: none;
+}
+
+.home-pic{
+    margin-left:200px;
+    transition:all 0.3s ease;
+}
+
+.home-pic img{
+    height:350px;
+    width:350px;
+    border:2px solid crimson;
+    border-radius:50%;
+}
+
+/* similar stylings for all stylings*/
+.about,.services,.skills{
+    padding: 100px 0;
+    font-family: 'Poppins',sans-serif;
+}
+
+.about-content,.services-content,.skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .title{
+    position: relative;
+    text-align:center;
+    font-family: 'Ubuntu',sans-serif;
+    font-size:40px;
+    font-weight: 500;
+    padding-bottom:20px;
+    margin-bottom:60px;
+}
+
+section .title::before{
+    content:"";
+    position: absolute;
+    bottom:0px;
+    left:50%;
+    width:180px;
+    height: 3px;
+    background-color: #111;
+    transform: translateX(-50%);
+}
+
+section .title::after{
+    position: absolute;
+    bottom:-12px;
+    left:50%;
+    font-size:20px;
+    color:crimson;
+    padding:5px;
+    background-color: white;
+    transform: translateX(-50%);
+}
+
+/* about section styling */
+
+.about .title::after{
+    content:"who i am";
+}
+
+.about-content .left{
+    width: 45%;
+}
+
+.about-content .left img{
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+    border:2px solid black;
+    border-radius: 5px;
+}
+
+.about-content .right{
+    width: 55%;
+}
+
+.about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom:10px;
+}
+
+.about-content .right .text span{
+    color:crimson
+}
+
+.about-content .right p{
+    text-align: justify;
+}
+
+/* services section styling */
+
+.services{
+    font-family: 'Poppins',sans-serif;
+    color:white;
+    background-color: #111;
+}
+
+.services .title::before{
+    background: white;
+    width:19%;
+}
+
+.services .title::after{
+    content:"what i provide";
+    background: #111;
+}
+
+.services .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin:20px 0px;   
+}
+
+.services .text span{
+    color:crimson
+}
+
+.services  p{
+    text-align: justify;
+}
+
+/* skills section styling */
+
+.skills .title::after{
+    content:"what i know";
+}
+
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+
+.skills .skills-content .left .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.skills .skills-content .left span{
+    color: crimson;
+}
+
+.skills .skills-content .left p{
+    text-align: justify;
+}
+
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+
+.skills .skills-content .right .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills .skills-content .right span{
+    font-size:18px;
+    font-weight: 600;
+}
+
+.skills .skills-content .right .line{
+    height: 5px;
+    width:100%;
+    background-color: grey;
+    position: relative;
+}
+
+.skills .skills-content .right .line::before{
+    content: "";
+    position:absolute;
+    top:0;
+    bottom:0;
+    height: 100%;
+    width: 80%;
+    background-color: crimson;
+}
+
+.skills .skills-content .right .html::before{
+    width: 90%;
+}
+
+.skills .skills-content .right .css::before{
+    width: 60%;
+}
+
+.skills .skills-content .right .javascript::before{
+    width: 70%;
+}
+
+.skills .skills-content .right .bootstrap::before{
+    width: 50%;
+}
+
+.skills .skills-content .right .mysql::before{
+    width: 80%;
+}
+
+/* responsive media query */
+@media (max-width:1300px){
+    .home .max-width{
+        margin-left:0;   
+    }
+}
+
+@media (max-width:1101px){
+    .about-content .left img{
+        height: 300px;
+        width: 300px;
+        border:2px solid black;
+    }
+}
+
+@media (max-width:991px){
+    .max-width{
+        padding:0 50px;
+    }
+}
+
+@media (max-width:947px){
+    .menu-btn{
+        display:block;
+        z-index:999;
+    }
+
+    .navbar .menu{
+        position:fixed;
+        top:0;
+        left:-100%;
+        height:100vh;
+        width:100%;
+        background-color: #111;
+        text-align: center;
+        padding-top: 100px;
+        transition:all 0.3s ease;
+    }
+    
+    .navbar .menu.active{
+        left:0;
+    }
+
+    .navbar .menu li{
+        display:block;
+    }
+
+    .navbar .menu li a{
+        display:inline-block;
+        margin:20px 0;
+        font-size:25px;
+    }
+
+    .home-content .text2{
+        font-size:70px;
+    }
+    
+    .home-content .text3{
+        font-size:35px;
+    }
+
+    .home-content a{
+        font-size:23px;
+        padding:10px 30px;
+    }
+
+    .home-pic img{
+        display: none;
+    } 
+
+    .max-width{
+        max-width: 800px;
+    }
+
+    .about-content .column{
+        width:100%;
+    }
+
+    .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin:0 auto 60px;
+    }
+
+    .about-content .right{
+        flex: 100%;
+    }
+
+    .skills-content .column .left{
+        width: calc(50% - 10px);
+        margin-bottom: 35px;
+
+    }
+}
+
+@media (max-width:690px){
+    .max-width{
+        padding:0 23px;
+    }
+
+    .home-content .text2{
+        font-size:60px;
+    }
+    
+    .home-content .text3{
+        font-size:32px;
+    }
+
+    .home-content a{
+        font-size:20px;
+    }
+}
+
+@media (max-width:500px){
+    .home-content .text2{
+        font-size:50px;
+    }
+    
+    .home-content .text3{
+        font-size:27px;
+    }
+
+    .skills-content .column .left{
+        width: calc(50% - 10px);
+        margin-bottom: 35px;
+
+    }
+}
