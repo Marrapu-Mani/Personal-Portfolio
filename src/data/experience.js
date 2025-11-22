@@ -1,13 +1,24 @@
 export const experience = [
     {
+        role: "Software Developer Intern",
+        company: "Technoji Global Pvt Ltd",
+        location: "Visakhapatnam, Andhra Pradesh",
+        period: "June 2025 – July 2025",
+        description: [
+            "Worked on developing responsive web applications using React.js.",
+            "Built reusable UI components and integrated backend APIs.",
+            "Contributed to full-stack feature development and debugging tasks."
+        ]
+    },
+    {
         role: "MERN Stack Developer Intern",
         company: "QualiZeal Technologies India Pvt. Ltd.",
         location: "Hyderabad, Telangana",
-        period: "May 2025 – July 2025",
+        period: "May 2025 – June 2025",
         description: [
-            "Successfully completed an internship focused on full-stack web development using the MERN stack.",
-            "Hands-on experience with HTML, Tailwind CSS, React.js, Node.js, Express.js, MongoDB, and GitHub.",
-            "Actively contributed to the development of an internal project."
+            "Contributed to frontend and backend development of an internal MERN application.",
+            "Built responsive UI components and backend features using Node.js, Express.js, and MongoDB.",
+            "Collaborated with the team to deliver features and assisted in integrating security testing workflows."
         ]
     },
     {
@@ -16,8 +27,8 @@ export const experience = [
         location: "Hyderabad, Telangana",
         period: "Oct 2024 – Jan 2025",
         description: [
-            "Successfully completed MERN Stack Developer training.",
-            "Strengthened skills in building full-stack applications and working in a professional environment."
+            "Completed MERN Stack Developer training with hands-on project work.",
+            "Strengthened skills in building full-stack applications and understanding development workflows."
         ]
     },
     {
